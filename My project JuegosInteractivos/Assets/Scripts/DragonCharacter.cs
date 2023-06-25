@@ -30,6 +30,11 @@ public class DragonCharacter : MonoBehaviour
             spriteRen.flipX = false;
             animator.SetBool("Run", true);
             animator.SetBool("Flykick", false);
+            if (Input.GetKey("space"))
+            {
+                animator.SetBool("Flykick", true);
+                dragonChar.velocity = new Vector2(speedWalk + 2.0f, dragonChar.velocity.y);
+            }
         }
         else
         {
@@ -39,9 +44,8 @@ public class DragonCharacter : MonoBehaviour
                 spriteRen.flipX = true;
                 animator.SetBool("Run", true);
                 animator.SetBool("Flykick", false);
-                if (Input.GetKey("space") && Input.GetKey("a"))
+                if (Input.GetKey("space"))
                 {
-                    animator.SetBool("Run", false);
                     animator.SetBool("Flykick", true);
                     dragonChar.velocity = new Vector2(-speedWalk-2.0f, dragonChar.velocity.y);
                 }
@@ -52,14 +56,13 @@ public class DragonCharacter : MonoBehaviour
                 animator.SetBool("Run", false);
             }
         }
-        if (Input.GetKey("space") && Input.GetKey("d"))
+        /*if (Input.GetKey("space"))
         {
-            animator.SetBool("Run", false);
             animator.SetBool("Flykick", true);
             dragonChar.velocity = new Vector2(speedWalk + 2.0f, dragonChar.velocity.y);
         }
 
-        /*if (Input.GetKey("w")) JumStrike  Flykick
+        if (Input.GetKey("w")) JumStrike  Flykick
         {
             dragonChar.velocity = new Vector2(0, speedJump);
         }*/

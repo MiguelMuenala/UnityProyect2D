@@ -314,9 +314,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Flykick
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: Run
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2371724917609636552}
   m_Solo: 0
@@ -376,7 +373,7 @@ AnimatorStateMachine:
     m_Position: {x: 1040, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2371724917609636552}
-    m_Position: {x: 400, y: 400, z: 0}
+    m_Position: {x: 280, y: 430, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5215707656917333506}
     m_Position: {x: 1040, y: 430, z: 0}
@@ -568,9 +565,6 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 2
     m_ConditionEvent: Flykick
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: Run
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7578969298830670935}
