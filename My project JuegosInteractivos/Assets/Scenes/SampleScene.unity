@@ -16269,6 +16269,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7568856250021385441, guid: b6cbbe187d75fcd41906b7fb9ab00e76, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7568856250021385441, guid: b6cbbe187d75fcd41906b7fb9ab00e76, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7568856250021385441, guid: b6cbbe187d75fcd41906b7fb9ab00e76, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7568856250021385455, guid: b6cbbe187d75fcd41906b7fb9ab00e76, type: 3}
       propertyPath: m_Name
       value: Bananas_0 (2)

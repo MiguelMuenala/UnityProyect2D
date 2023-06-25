@@ -14,7 +14,7 @@ public class fruitCollecter : MonoBehaviour
         {
             //puntaje.AddPoint(cantidadPuntos);
             GetComponent<SpriteRenderer>().enabled = false;
-            gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            gameObject.transform.GetChild(0).gameObject.SetActive(true);//Activa el hijo del objeto que contiene este script
 
             //FindObjectOfType<FruitManager>().AllFruitsCollected();
             Destroy(gameObject, 0.5f);

@@ -27,7 +27,7 @@ public class DragonCharacter : MonoBehaviour
     {
         if (Input.GetKey("d") || Input.GetKey("right")) {
             dragonChar.velocity = new Vector2(speedWalk, dragonChar.velocity.y);
-            spriteRen.flipX = false;
+            spriteRen.flipX = false; //flipX es un booleano que indica si el sprite debe voltearse horizontalmente
             animator.SetBool("Run", true);
             animator.SetBool("Flykick", false);
             if (Input.GetKey("space"))
@@ -41,7 +41,7 @@ public class DragonCharacter : MonoBehaviour
             if (Input.GetKey("a") || Input.GetKey("left"))
             {
                 dragonChar.velocity = new Vector2(-speedWalk, dragonChar.velocity.y);
-                spriteRen.flipX = true;
+                spriteRen.flipX = true;//voltear
                 animator.SetBool("Run", true);
                 animator.SetBool("Flykick", false);
                 if (Input.GetKey("space"))

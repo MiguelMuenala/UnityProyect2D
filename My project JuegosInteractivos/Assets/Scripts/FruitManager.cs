@@ -22,7 +22,7 @@ public class FruitManager : MonoBehaviour
     {
         AllFruitsCollected();
         totalFruits.text = totalFruitsInLevel.ToString();
-        int scoreResult = totalFruitsInLevel - transform.childCount;
+        int scoreResult = totalFruitsInLevel - transform.childCount;//childCount: es para objeter el número de hijos que se tiene 
         FruitsCollected.text = scoreResult.ToString();
     }
     public void AllFruitsCollected()
