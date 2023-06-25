@@ -9,7 +9,9 @@ public class DamageObject : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player")){
             Debug.Log("Player Damage");
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);//destruye el objeto que colisiona con el objeto que contiene este script
+            collision.transform.GetComponent<PlayerRespawn>().PlayerDamaged();//objetenemos la funcion "PlayerDamaged" del script "PlayerRespawn"
+
         }
     }
 }
