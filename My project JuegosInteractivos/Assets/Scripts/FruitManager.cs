@@ -11,12 +11,15 @@ public class FruitManager : MonoBehaviour
 
     public Text totalFruits;
     public Text FruitsCollected;
+    public Text Totalpoint;
 
     private int totalFruitsInLevel;
 
     private void Start()
     {
         totalFruitsInLevel = transform.childCount;//Frutas totales que tiene el contenedor de frutas al iniciar el juego
+        
+        Totalpoint.text = PlayerPrefs.GetFloat("chaeckPointPositionX").ToString();
     }
     private void Update()
     {
@@ -24,6 +27,8 @@ public class FruitManager : MonoBehaviour
         totalFruits.text = totalFruitsInLevel.ToString();
         int scoreResult = totalFruitsInLevel - transform.childCount;//childCount: es para objeter el número de hijos que se tiene 
         FruitsCollected.text = scoreResult.ToString();
+        int conteindoPlayerPrefs= scoreResult + PlayerPrefs.GetInt("chaeckPointPositionX");
+        PlayerPrefs.SetFloat("chaeckPointPositionX", conteindoPlayerPrefs);
     }
     public void AllFruitsCollected()
     {

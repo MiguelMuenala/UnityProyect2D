@@ -12,14 +12,14 @@ public class PlayerRespawn : MonoBehaviour
     {
         if (PlayerPrefs.GetFloat("chaeckPointPositionX") != 0)//PlayerPrefs: guarda información del juego, y la mantiene aún cuando termina el juego, y no guarda vectores.
         {
-            transform.position = (new Vector2(PlayerPrefs.GetFloat("chaeckPointPositionX"), PlayerPrefs.GetFloat("chaeckPointPositionY")));
+            //transform.position = (new Vector2(PlayerPrefs.GetFloat("chaeckPointPositionX"), PlayerPrefs.GetFloat("chaeckPointPositionY")));
         }
     }
 
     public void ReachedCheckPoint(float x, float y)//Guarda la posción del Ckerpoint con el PlayerPrefs
     {
         PlayerPrefs.SetFloat("chaeckPointPositionX", x);//SetFloat para guardar la información en el PlayerPrefs
-        PlayerPrefs.SetFloat("chaeckPointPositionY", y);
+        //PlayerPrefs.SetFloat("chaeckPointPositionY", y);
     }
     
     public void PlayerDamaged()//Para animation de morir.
