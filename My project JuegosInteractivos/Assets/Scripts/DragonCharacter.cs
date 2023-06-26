@@ -18,6 +18,7 @@ public class DragonCharacter : MonoBehaviour
     public Animator animator;
 
     public GameObject textGameObject;// Desactivar el texto
+    public GameObject textGameObject1;// Desactivar el texto
 
     void Start()
     {
@@ -99,12 +100,14 @@ public class DragonCharacter : MonoBehaviour
         if (Input.GetKey("r"))//Desactivvar el texto
         {
             textGameObject.SetActive(false);
+            textGameObject1.SetActive(false);
         }
         else
         {
             if (Input.GetKey("t"))
             {
                 textGameObject.SetActive(true);
+                textGameObject1.SetActive(true);
             }
         }
         

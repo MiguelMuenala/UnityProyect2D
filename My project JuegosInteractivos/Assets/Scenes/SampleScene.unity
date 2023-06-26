@@ -958,6 +958,10 @@ PrefabInstance:
       propertyPath: textGameObject
       value: 
       objectReference: {fileID: 1382600742}
+    - target: {fileID: 9004594598179621276, guid: a42779ceda35d3d4dbaac886ca727aa2, type: 3}
+      propertyPath: textGameObject1
+      value: 
+      objectReference: {fileID: 458691063}
     - target: {fileID: 9004594598179621277, guid: a42779ceda35d3d4dbaac886ca727aa2, type: 3}
       propertyPath: m_Name
       value: idle_01
@@ -1972,6 +1976,91 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &458691063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 458691066}
+  - component: {fileID: 458691065}
+  - component: {fileID: 458691064}
+  m_Layer: 5
+  m_Name: Orden (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &458691064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458691063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 4beb055f07aaff244873dec698d0363e, type: 3}
+    m_FontSize: 10
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Con tecla "space" el personaje toma impulso.
+
+    Con tecla "r" desactivas
+    este mensaje.
+
+    Con tecla "t" habilitas este mensaje.'
+--- !u!222 &458691065
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458691063}
+  m_CullTransparentMesh: 1
+--- !u!224 &458691066
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458691063}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 133620295}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -204.4, y: -43.8}
+  m_SizeDelta: {x: 208.1678, y: 52.0702}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &460073735
 GameObject:
   m_ObjectHideFlags: 0
@@ -14869,8 +14958,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12, y: 125}
-  m_SizeDelta: {x: 326.0749, y: 54.8101}
+  m_AnchoredPosition: {x: 27.521189, y: 115}
+  m_SizeDelta: {x: 503.2453, y: 52.0702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1382600744
 MonoBehaviour:
@@ -14885,7 +14974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11863652, g: 0.21252413, b: 0.5849056, a: 1}
+  m_Color: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -14905,7 +14994,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Recoge las frutas que contengan COLORES en ingles
+  m_Text: Recoge las frutas que contengan COLORES en ingles.
 --- !u!222 &1382600745
 CanvasRenderer:
   m_ObjectHideFlags: 0

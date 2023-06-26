@@ -24,6 +24,7 @@ public class PlayerRespawn : MonoBehaviour
     
     public void PlayerDamaged()//Para animation de morir.
     {
+        //PlayerPrefs.SetFloat("chaeckPointPositionY", PlayerPrefs.GetInt("chaeckPointPositionX") + PlayerPrefs.GetInt("chaeckPointPositionY"));
         animator.Play("die");
         Invoke("RefreshScene", 1); //tiempo de espera en segundos
     }
