@@ -17,6 +17,8 @@ public class DragonCharacter : MonoBehaviour
     public SpriteRenderer spriteRen;
     public Animator animator;
 
+    public GameObject textGameObject;// Desactivar el texto
+
     void Start()
     {
         dragonChar = GetComponent<Rigidbody2D>();
@@ -93,5 +95,21 @@ public class DragonCharacter : MonoBehaviour
 
             }
         }
+
+        if (Input.GetKey("r"))//Desactivvar el texto
+        {
+            textGameObject.SetActive(false);
+        }
+        else
+        {
+            if (Input.GetKey("t"))
+            {
+                textGameObject.SetActive(true);
+            }
+        }
+        
+         
+        
+
     }
 }
