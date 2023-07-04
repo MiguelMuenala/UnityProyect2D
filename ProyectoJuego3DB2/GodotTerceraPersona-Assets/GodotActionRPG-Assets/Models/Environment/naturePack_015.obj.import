@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bm41p28j6201u"
+path="res://.godot/imported/naturePack_015.obj-f05a30d9aac11ead8c2b485df865ce2c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/naturePack_015.obj-f05a30d9aac11ead8c2b485df865ce2c.mesh"]
+
+source_file="res://GodotTerceraPersona-Assets/GodotActionRPG-Assets/Models/Environment/naturePack_015.obj"
+dest_files=["res://.godot/imported/naturePack_015.obj-f05a30d9aac11ead8c2b485df865ce2c.mesh", "res://.godot/imported/naturePack_015.obj-f05a30d9aac11ead8c2b485df865ce2c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
