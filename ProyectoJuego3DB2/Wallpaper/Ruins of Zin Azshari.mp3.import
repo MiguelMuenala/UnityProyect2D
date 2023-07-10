@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4jimp6s6v2os"
+path="res://.godot/imported/Ruins of Zin Azshari.mp3-c9d0a24ac271ba8323c7403f1c0922a6.mp3str"
+
+[deps]
+
+source_file="res://Wallpaper/Ruins of Zin Azshari.mp3"
+dest_files=["res://.godot/imported/Ruins of Zin Azshari.mp3-c9d0a24ac271ba8323c7403f1c0922a6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

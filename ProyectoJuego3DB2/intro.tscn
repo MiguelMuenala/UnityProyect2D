@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://bx2st5hvtqsd2"]
+
+[ext_resource type="VideoStream" path="res://Wallpaper/Dota-2.ogv" id="1_7ifot"]
+[ext_resource type="Script" path="res://intro.gd" id="2_nfqrn"]
+[ext_resource type="FontFile" uid="uid://dn7x8ywfim7a" path="res://Wallpaper/The Wild Breath of Zelda.otf" id="3_wk6vd"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_7ifot")
+autoplay = true
+script = ExtResource("2_nfqrn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 499.0
+offset_right = 351.0
+offset_bottom = 575.0
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+self_modulate = Color(0.843137, 0.356863, 1, 1)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_wk6vd")
+theme_override_font_sizes/font_size = 36
+text = "Play"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_wk6vd")
+theme_override_font_sizes/font_size = 26
+text = "Quit"
+
+[connection signal="finished" from="." to="." method="_on_finished"]
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

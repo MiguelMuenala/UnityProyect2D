@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://q5c1qpjnh0eq"
+path="res://.godot/imported/Naga Ambush.mp3-33129bab0f86ee65ab316e148aba199b.mp3str"
+
+[deps]
+
+source_file="res://Wallpaper/Naga Ambush.mp3"
+dest_files=["res://.godot/imported/Naga Ambush.mp3-33129bab0f86ee65ab316e148aba199b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
